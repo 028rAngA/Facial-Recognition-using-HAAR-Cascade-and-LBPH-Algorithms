@@ -1,0 +1,14 @@
+# Import OpenCV2 for image processing
+import cv2
+
+# Start capturing video 
+vid_cam = cv2.VideoCapture(0)
+
+# Detect object in video stream using Haarcascade Frontal Face
+face_detector = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+
+# For each person, one face id
+face_id = '2'
+
+# Initialize sample face image
+count = 0
