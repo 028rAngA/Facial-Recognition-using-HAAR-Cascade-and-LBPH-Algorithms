@@ -1,0 +1,20 @@
+
+# Import OpenCV2 for image processing
+# Import os for file path
+import cv2, os
+
+# Import numpy for matrix calculation
+import numpy as np
+
+# Import Python Image Library (PIL)
+from PIL import Image
+
+# Create Local Binary Patterns Histograms for face recognization
+#recognizer = cv2.face.createLBPHFaceRecognizer()
+
+recognizer = cv2.face.LBPHFaceRecognizer_create()
+
+
+# Using prebuilt frontal face training model, for face detection
+detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml");
+
